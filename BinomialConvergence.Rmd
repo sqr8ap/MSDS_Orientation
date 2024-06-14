@@ -1,0 +1,14 @@
+---
+title: "Binomial Convergence"
+author: "SQR"
+date: "2024-06-14"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Show that the binomial and normal distributions converge at large N
+
+
