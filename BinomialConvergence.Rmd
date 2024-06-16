@@ -7,8 +7,25 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
 ```
 
-Show that the binomial and normal distributions converge at large N
+Show that the binomial and normal distributions converge at large N.
+
+```{r}
+# Small N
+ggplot(data.frame(n=rbinom(50, size=100, prob=0.5)), aes(x=n))+geom_histogram()+theme_classic()
+```
+
+```{r}
+# Large N
+ggplot(data.frame(n=rbinom(5000, size=100, prob=0.5)), aes(x=n))+geom_histogram()+theme_classic()
+```
+
+As shown here, the larger N gets, the more normal the binomial distribution becomes. The CLT states that with a large enough sample size, the sampling distribution will be normal. 
+
+
+
+
 
 
